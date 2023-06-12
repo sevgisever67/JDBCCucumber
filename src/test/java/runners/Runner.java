@@ -15,8 +15,8 @@ import org.junit.runner.RunWith;
         },
         features = "src/test/resources",
         glue = {"stepDefinitions"},
-        tags = "@t113",
-        dryRun = true
+        tags = "@query4",
+        dryRun = false
 )
 
 
@@ -76,6 +76,5 @@ public class Runner {
 
                 dryRun = false default degerdir
                 ve Testleri normal olarak calistirmamizi saglar
-
      */
 }

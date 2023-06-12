@@ -1,11 +1,15 @@
 Feature: JDBC Query 3
-  Scenario:
+
+  # Database üzerinden appointment tablosunda ögleden önce icin alinmis randevularin ögleden
+  # sonra icin alinan randevulardan az oldugunu dogrulayiniz.
+
+  Background: Connection
+    * Database baglantisi kurulur.
 
 
+  Scenario: appointment tablosunda ögleden önce icin alinmis
+  randevularin ögleden sonra icin alinan randevulardan az oldugunu dogrulayiniz.
 
-  git init
-  git add .
-  git commit -m "first commit"
-  git branch -M main
-  git remote add origin https://github.com/sevgisever67/JDBCCucumber.git
-  git push -u origin main
+    * Randevu sayilarini ogrenebilecegimiz sql querysi hazirlanir.
+    * Query calistirilir ve sonuclar dogrulanir.
+    * Database baglantisi kapatilir.
