@@ -104,7 +104,7 @@ public class Stepdefinition {
         assertTrue(sabah < aksam);
 
     }
-    //*****************************************************************************
+    //**********************************************************************************
 
     @Given("Languages tablosuna query gönderilir ve sonuclar dogrulanir.")
     public void languages_tablosuna_query_gönderilir_ve_sonuclar_dogrulanir() throws SQLException {
